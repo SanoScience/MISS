@@ -1,0 +1,104 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# scikit-learn specific
+doc/_build/
+doc/auto_examples/
+doc/modules/generated/
+doc/datasets/generated/
+
+# sklearn template
+doc/
+*.yml
+.nojekyll
+ci_scripts/
+skltemplate/
+
+# riskslim directories
+batch/data/
+batch/results/
+batch/log/
+dev/
+cluster/
+
+# riskslim files
+riskslim_todo.ft
+examples/data/*cvindices.csv
+examples/data/*weights.csv
+examples/ex_00_tests.py
+examples/data/recidivism_v01_*.csv
+!examples/data/breastcancer_cvindices.csv
+!examples/data/breastcancer_weights.csv
+riskslim/tests/test_common.py
+riskslim/tests/test_template.py
+riskslim/loss_functions/build/
+riskslim/loss_functions/*.so
+riskslim/loss_functions/*.c
+
+# Distribution / packaging
+.Python
+env/
+venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.idea
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# emacs
+*~
+*.org
+\#*#
+
+# Jupyter NB Checkpoints
+.ipynb_checkpoints/
+/output/
