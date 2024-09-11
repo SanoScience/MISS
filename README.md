@@ -45,28 +45,25 @@ mcrsc.fit(x_train, y_train)
 
 
 ### References
+Please consider citing our paper:
+```
+@inproceedings{grzeszczyk2024miss,
+  title={MISS: Multiclass Interpretable Scoring Systems},
+  author={Grzeszczyk, Michal K and Trzci{\'n}ski, Tomasz and Sitek, Arkadiusz},
+  booktitle={Proceedings of the 2024 SIAM International Conference on Data Mining (SDM)},
+  pages={55--63},
+  year={2024},
+  organization={SIAM}
+}
+```
+
+
 The implementation of risk-slim is taken from the original [risk-slim repository](https://github.com/ustunb/risk-slim). 
 We have broadened the implementation to enable Multiclass (mc) scoring systems generation.
 
 Among the most important papers that helped during the implemenation of this project we have to name:
 ```
-@article{ustun2019jmlr,
-  author  = {Ustun, Berk and Rudin, Cynthia},
-  title   = {{Learning Optimized Risk Scores}},
-  journal = {{Journal of Machine Learning Research}},
-  year    = {2019},
-  volume  = {20},
-  number  = {150},
-  pages   = {1-75},
-  url     = {http://jmlr.org/papers/v20/18-615.html}
-}
+Ustun, Berk, and Cynthia Rudin. "Learning optimized risk scores." Journal of Machine Learning Research 20.150 (2019): 1-75.
 
-@inproceedings{pajor2022effect,
-  title={Effect of Feature Discretization on Classification Performance of Explainable Scoring-Based Machine Learning Model},
-  author={Pajor, Arkadiusz and {\.Z}o{\l}nierek, Jakub and Sniezynski, Bartlomiej and Sitek, Arkadiusz},
-  booktitle={International Conference on Computational Science},
-  pages={92--105},
-  year={2022},
-  organization={Springer}
-}
+Pajor, Arkadiusz, et al. "Effect of feature discretization on classification performance of explainable scoring-based machine learning model." International Conference on Computational Science. Cham: Springer International Publishing, 2022.
 ```
