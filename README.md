@@ -1,4 +1,7 @@
 # MISS
+
+### | [Paper](https://epubs.siam.org/doi/pdf/10.1137/1.9781611978032.7) |
+
 This is a repository containing the code to generate Multiclass Interpretable Scoring Systems (MISS) as the one below:
 
 ![MISS](./images/example.png)
