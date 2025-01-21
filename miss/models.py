@@ -319,6 +319,7 @@ class RiskSLIMClassifier(RiskSLIMBase):
             class_data, constraints, self._settings)
         model_info["coef_set"] = None
         self._model = (model_info, class_data)
+        return self
 
     def predict_proba(self, x: pd.DataFrame):
         """
@@ -432,6 +433,7 @@ class OvRRiskSLIMClassifier(RiskSLIMBase):
             submodel.fit(x, y_specific_class)
             submodels[class_value] = submodel
         self._submodels = submodels
+        return self
 
     def predict(self, x) -> np.ndarray:
         """
@@ -521,8 +523,8 @@ class MISSClassifier(RiskSLIMBase):
     Works with pandas DataFrames only, as column names are
     used in a resulting risk score system.
 
-    :param mc_l0_min: minimum number of features in the final MCRiskSLIM model
-    :param mc_l0_max: maximum number of features in the final MCRiskSLIM model
+    :param mc_l0_min: minimum number of features in the final MISS model
+    :param mc_l0_max: maximum number of features in the final MISS model
     :param mc_c0_value: penalization term for adding feature to the model
 
     :param l0_min: minimum number of coefficients in the final MCRiskSLIM model. This param doesn't have any effect when
@@ -604,6 +606,7 @@ class MISSClassifier(RiskSLIMBase):
         model_info["coef_set"] = None
         self._model = (model_info, class_data)
         self._rho = self._model[0]["solution"]
+        return self
 
     def predict_proba(self, x: pd.DataFrame):
         """
